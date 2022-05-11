@@ -157,15 +157,15 @@ for m in Module.objects.filter():
 
 # user
 u = User()
-u.first_name = 'admin'
-u.last_name = 'admin'
+u.first_name = 'Juan Carlos'
+u.last_name = 'Castañeda'
 u.username = 'admin'
 u.dni = '0928363993'
 u.email = 'correo@gmail.com'
 u.is_active = True
 u.is_superuser = True
 u.is_staff = True
-u.set_password('admin')
+u.set_password('Mabjuan_007@')
 u.save()
 
 u.groups.add(group)
