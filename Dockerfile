@@ -8,4 +8,5 @@ COPY . /code/
 
 RUN pip install -r requirements.txt
 
-CMD ["gunicorn", "-c", "config/gunicorn/conf.py", "--bind", ":8000", "--chdir", "docker_django", "docker_django.wsgi:application"]
+
+CMD ["gunicorn", "-c", "config/gunicorn/conf.py", "--bind", ":8000", "--chdir", "app", "config.wsgi:application"]
